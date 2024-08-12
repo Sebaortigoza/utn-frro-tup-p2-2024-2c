@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Selección de Correos</title>
+</head>
+<body>
+    <h1>Formulario de Selección de Correos</h1>
+    <form action="/ruta-a-tu-servidor" method="post">
+        <label for="emails">Selecciona uno o varios correos electrónicos:</label>
+        <select id="emails" name="emails[]" multiple required>
+            <option value="usuario1@gmail.com">usuario1@gmail.com</option>
+            <option value="usuario2@gmail.com">usuario2@gmail.com</option>
+            <option value="usuario3@gmail.com">usuario3@gmail.com</option>
+            <option value="usuario4@gmail.com">usuario4@gmail.com</option>
+            <option value="usuario5@gmail.com">usuario5@gmail.com</option>
+        </select>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
